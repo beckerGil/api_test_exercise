@@ -1,0 +1,526 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://example.com/object1654525427.json",
+	"title": "Root",
+	"type": "object",
+	"required": [
+		"max_upload_size",
+		"success",
+		"feature_flags_dict",
+		"token",
+		"uploadSizeLimit",
+		"password_expiration",
+		"customer_configuration",
+		"redirect_url",
+		"user"
+	],
+	"properties": {
+		"max_upload_size": {
+			"$id": "#root/max_upload_size",
+			"title": "Max_upload_size",
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/max_upload_size/items",
+				"title": "Items",
+				"type": "integer",
+				"examples": [
+					314572800
+				],
+				"default": 0
+			}
+		},
+		"success": {
+			"$id": "#root/success",
+			"title": "Success",
+			"type": "boolean",
+			"examples": [
+				true
+			],
+			"default": true
+		},
+		"feature_flags_dict": {
+			"$id": "#root/feature_flags_dict",
+			"title": "Feature_flags_dict",
+			"type": "object",
+			"required": [
+				"force_bulk_api_throttling_limit",
+				"zero_score_value",
+				"anaplan_basic_data_integration",
+				"hide_prioritization_pipeline_boxes",
+				"demand_center_feature_flag",
+				"enable_rank_f"
+			],
+			"properties": {
+				"force_bulk_api_throttling_limit": {
+					"$id": "#root/feature_flags_dict/force_bulk_api_throttling_limit",
+					"title": "Force_bulk_api_throttling_limit",
+					"type": "null",
+					"default": null
+				},
+				"zero_score_value": {
+					"$id": "#root/feature_flags_dict/zero_score_value",
+					"title": "Zero_score_value",
+					"type": "integer",
+					"examples": [
+						0
+					],
+					"default": 0
+				},
+				"anaplan_basic_data_integration": {
+					"$id": "#root/feature_flags_dict/anaplan_basic_data_integration",
+					"title": "Anaplan_basic_data_integration",
+					"type": "null",
+					"default": null
+				},
+				"hide_prioritization_pipeline_boxes": {
+					"$id": "#root/feature_flags_dict/hide_prioritization_pipeline_boxes",
+					"title": "Hide_prioritization_pipeline_boxes",
+					"type": "null",
+					"default": null
+				},
+				"demand_center_feature_flag": {
+					"$id": "#root/feature_flags_dict/demand_center_feature_flag",
+					"title": "Demand_center_feature_flag",
+					"type": "null",
+					"default": null
+				},
+				"enable_rank_f": {
+					"$id": "#root/feature_flags_dict/enable_rank_f",
+					"title": "Enable_rank_f",
+					"type": "null",
+					"default": null
+				}
+			}
+		}
+,
+		"token": {
+			"$id": "#root/token",
+			"title": "Token",
+			"type": "string",
+			"default": "",
+			"examples": [
+				"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IjM0NjRfbWludGlnbzIwQGdtYWlsLmNvbSIsIm9yaWdfaWF0IjoxNjU0NTIzODAzLCJleHAiOjE2NTQ1MjU2MDMsInVzZXJfaWQiOjc0NzQsImN1c3RvbWVyX2lkIjozNDY0LCJlbWFpbCI6Im1pbnRpZ28yMEBnbWFpbC5jb20ifQ.wylrWIInBiNhrejYT3gkhIb1FlXWGMnk01mLJP0YKNs"
+			],
+			"pattern": "^.*$"
+		},
+		"uploadSizeLimit": {
+			"$id": "#root/uploadSizeLimit",
+			"title": "Uploadsizelimit",
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/uploadSizeLimit/items",
+				"title": "Items",
+				"type": "integer",
+				"examples": [
+					52428800
+				],
+				"default": 0
+			}
+		},
+		"password_expiration": {
+			"$id": "#root/password_expiration",
+			"title": "Password_expiration",
+			"type": "object",
+			"required": [
+				"gentle_change_password",
+				"password_age",
+				"enforce_change_password",
+				"password_days_left"
+			],
+			"properties": {
+				"gentle_change_password": {
+					"$id": "#root/password_expiration/gentle_change_password",
+					"title": "Gentle_change_password",
+					"type": "boolean",
+					"examples": [
+						false
+					],
+					"default": true
+				},
+				"password_age": {
+					"$id": "#root/password_expiration/password_age",
+					"title": "Password_age",
+					"type": "integer",
+					"examples": [
+						196
+					],
+					"default": 0
+				},
+				"enforce_change_password": {
+					"$id": "#root/password_expiration/enforce_change_password",
+					"title": "Enforce_change_password",
+					"type": "boolean",
+					"examples": [
+						false
+					],
+					"default": true
+				},
+				"password_days_left": {
+					"$id": "#root/password_expiration/password_days_left",
+					"title": "Password_days_left",
+					"type": "integer",
+					"examples": [
+						-196
+					],
+					"default": 0
+				}
+			}
+		}
+,
+		"customer_configuration": {
+			"$id": "#root/customer_configuration",
+			"title": "Customer_configuration",
+			"type": "object",
+			"required": [
+				"hasNNLeads",
+				"has_active_zoominfo_integration",
+				"is_sso_login",
+				"hasNNAccounts",
+				"contract_type",
+				"enable_demand_center",
+				"is_sso_active"
+			],
+			"properties": {
+				"hasNNLeads": {
+					"$id": "#root/customer_configuration/hasNNLeads",
+					"title": "Hasnnleads",
+					"type": "boolean",
+					"examples": [
+						false
+					],
+					"default": true
+				},
+				"has_active_zoominfo_integration": {
+					"$id": "#root/customer_configuration/has_active_zoominfo_integration",
+					"title": "Has_active_zoominfo_integration",
+					"type": "boolean",
+					"examples": [
+						false
+					],
+					"default": true
+				},
+				"is_sso_login": {
+					"$id": "#root/customer_configuration/is_sso_login",
+					"title": "Is_sso_login",
+					"type": "boolean",
+					"examples": [
+						false
+					],
+					"default": true
+				},
+				"hasNNAccounts": {
+					"$id": "#root/customer_configuration/hasNNAccounts",
+					"title": "Hasnnaccounts",
+					"type": "boolean",
+					"examples": [
+						false
+					],
+					"default": true
+				},
+				"contract_type": {
+					"$id": "#root/customer_configuration/contract_type",
+					"title": "Contract_type",
+					"type": "integer",
+					"examples": [
+						1
+					],
+					"default": 0
+				},
+				"enable_demand_center": {
+					"$id": "#root/customer_configuration/enable_demand_center",
+					"title": "Enable_demand_center",
+					"type": "integer",
+					"examples": [
+						0
+					],
+					"default": 0
+				},
+				"is_sso_active": {
+					"$id": "#root/customer_configuration/is_sso_active",
+					"title": "Is_sso_active",
+					"type": "boolean",
+					"examples": [
+						false
+					],
+					"default": true
+				}
+			}
+		}
+,
+		"redirect_url": {
+			"$id": "#root/redirect_url",
+			"title": "Redirect_url",
+			"type": "string",
+			"default": "",
+			"examples": [
+				"create-market"
+			],
+			"pattern": "^.*$"
+		},
+		"user": {
+			"$id": "#root/user",
+			"title": "User",
+			"type": "object",
+			"required": [
+				"first_name",
+				"last_name",
+				"user_id",
+				"features",
+				"markets_count",
+				"salesCoach360Version",
+				"customer_type",
+				"created_on",
+				"is_admin",
+				"notific_data",
+				"permissions",
+				"customer_id",
+				"user_email",
+				"customer_name"
+			],
+			"properties": {
+				"first_name": {
+					"$id": "#root/user/first_name",
+					"title": "First_name",
+					"type": "string",
+					"default": "",
+					"examples": [
+						"Anaplan"
+					],
+					"pattern": "^.*$"
+				},
+				"last_name": {
+					"$id": "#root/user/last_name",
+					"title": "Last_name",
+					"type": "string",
+					"default": "",
+					"examples": [
+						"Test"
+					],
+					"pattern": "^.*$"
+				},
+				"user_id": {
+					"$id": "#root/user/user_id",
+					"title": "User_id",
+					"type": "integer",
+					"examples": [
+						7474
+					],
+					"default": 0
+				},
+				"features": {
+					"$id": "#root/user/features",
+					"title": "Features",
+					"type": "string",
+					"default": "",
+					"examples": [
+						"enable_rank_f,demand_center_feature_flag,anaplan_basic_data_integration,force_bulk_api_throttling_limit,zero_score_value"
+					],
+					"pattern": "^.*$"
+				},
+				"markets_count": {
+					"$id": "#root/user/markets_count",
+					"title": "Markets_count",
+					"type": "object",
+					"required": [
+						"leads_type",
+						"total",
+						"accounts_type",
+						"behavioral_type"
+					],
+					"properties": {
+						"leads_type": {
+							"$id": "#root/user/markets_count/leads_type",
+							"title": "Leads_type",
+							"type": "integer",
+							"examples": [
+								0
+							],
+							"default": 0
+						},
+						"total": {
+							"$id": "#root/user/markets_count/total",
+							"title": "Total",
+							"type": "integer",
+							"examples": [
+								0
+							],
+							"default": 0
+						},
+						"accounts_type": {
+							"$id": "#root/user/markets_count/accounts_type",
+							"title": "Accounts_type",
+							"type": "integer",
+							"examples": [
+								0
+							],
+							"default": 0
+						},
+						"behavioral_type": {
+							"$id": "#root/user/markets_count/behavioral_type",
+							"title": "Behavioral_type",
+							"type": "integer",
+							"examples": [
+								0
+							],
+							"default": 0
+						}
+					}
+				}
+,
+				"salesCoach360Version": {
+					"$id": "#root/user/salesCoach360Version",
+					"title": "Salescoach360version",
+					"type": "string",
+					"default": "",
+					"examples": [
+						"3.2.0"
+					],
+					"pattern": "^.*$"
+				},
+				"customer_type": {
+					"$id": "#root/user/customer_type",
+					"title": "Customer_type",
+					"type": "string",
+					"default": "",
+					"examples": [
+						"Internal"
+					],
+					"pattern": "^.*$"
+				},
+				"created_on": {
+					"$id": "#root/user/created_on",
+					"title": "Created_on",
+					"type": "string",
+					"default": "",
+					"examples": [
+						"2021-11-22 09:55:46.832324"
+					],
+					"pattern": "^.*$"
+				},
+				"is_admin": {
+					"$id": "#root/user/is_admin",
+					"title": "Is_admin",
+					"type": "boolean",
+					"examples": [
+						false
+					],
+					"default": true
+				},
+				"notific_data": {
+					"$id": "#root/user/notific_data",
+					"title": "Notific_data",
+					"type": "object",
+					"required": [
+						"id",
+						"hmac",
+						"role",
+						"customerId",
+						"dateCreated"
+					],
+					"properties": {
+						"id": {
+							"$id": "#root/user/notific_data/id",
+							"title": "Id",
+							"type": "string",
+							"default": "",
+							"examples": [
+								"1f4a57e429b074bc94a0a9ac1670614fba3b40189270557bbbee210c7a8e4eb1"
+							],
+							"pattern": "^.*$"
+						},
+						"hmac": {
+							"$id": "#root/user/notific_data/hmac",
+							"title": "Hmac",
+							"type": "string",
+							"default": "",
+							"examples": [
+								"f11426621ffaf5100ca19f6cde1f4c258eebe00999f04fc9b2903a0562836ece"
+							],
+							"pattern": "^.*$"
+						},
+						"role": {
+							"$id": "#root/user/notific_data/role",
+							"title": "Role",
+							"type": "string",
+							"default": "",
+							"examples": [
+								"View Only"
+							],
+							"pattern": "^.*$"
+						},
+						"customerId": {
+							"$id": "#root/user/notific_data/customerId",
+							"title": "Customerid",
+							"type": "string",
+							"default": "",
+							"examples": [
+								"ce86287c4c28240fe06afcb0f4c2aac85a5a1a4a4e203c32cf31108cc36c1f8a"
+							],
+							"pattern": "^.*$"
+						},
+						"dateCreated": {
+							"$id": "#root/user/notific_data/dateCreated",
+							"title": "Datecreated",
+							"type": "string",
+							"default": "",
+							"examples": [
+								"22-11-2021"
+							],
+							"pattern": "^.*$"
+						}
+					}
+				}
+,
+				"permissions": {
+					"$id": "#root/user/permissions",
+					"title": "Permissions",
+					"type": "array",
+					"default": [],
+					"items":{
+						"$id": "#root/user/permissions/items",
+						"title": "Items",
+						"type": "string",
+						"default": "",
+						"examples": [
+							"viewDemandCenterSegments"
+						],
+						"pattern": "^.*$"
+					}
+				},
+				"customer_id": {
+					"$id": "#root/user/customer_id",
+					"title": "Customer_id",
+					"type": "integer",
+					"examples": [
+						3464
+					],
+					"default": 0
+				},
+				"user_email": {
+					"$id": "#root/user/user_email",
+					"title": "User_email",
+					"type": "string",
+					"default": "",
+					"examples": [
+						"mintigo20@gmail.com"
+					],
+					"pattern": "^.*$"
+				},
+				"customer_name": {
+					"$id": "#root/user/customer_name",
+					"title": "Customer_name",
+					"type": "string",
+					"default": "",
+					"examples": [
+						"Test24"
+					],
+					"pattern": "^.*$"
+				}
+			}
+		}
+
+	}
+}
